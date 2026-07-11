@@ -1,0 +1,2229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Óptica JYC</title>
+    <!-- Plugins CSS -->
+    <link href="css/plugins/plugins.css" rel="stylesheet">
+    <!--smart form-->
+    <link type="text/css" rel="stylesheet" href="smart-form/contact/css/smart-forms.css">
+    <!-- REVOLUTION STYLE SHEETS -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+    <!-- REVOLUTION LAYERS STYLES -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <!-- REVOLUTION NAVIGATION STYLES -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    <!-- load css for cubeportfolio -->
+    <link rel="stylesheet" type="text/css" href="cubeportfolio/css/cubeportfolio.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <div id="preloader-inner"></div>
+    </div><!--/preloader-->
+
+    <!-- Pushy Menu -->
+    <aside class="pushy pushy-right">
+        <div class="advanced-search">
+            <h4>Find Homes</h4>
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label for="location">Enter Location</label>
+                    <input type="text" id="location" class="form-control" placeholder="eg. Paris">
+                </div><!--form group-->
+                <div class="form-group">
+                    <label for="types">Any Types</label>
+                    <select class="form-control" id="types">
+                        <option> Any types</option>
+                        <option> Apartments</option>
+                        <option> Houses</option>
+                        <option> Commercial</option>
+                        <option> Garages</option>
+                        <option> Lots</option>
+                    </select>
+                </div><!--form group-->
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="min-price">Min. Price ($)</label>
+                            <input type="text" id="min-price" class="form-control" placeholder="eg. $1000">
+                        </div><!--form group-->
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="max-price">Max. Price ($)</label>
+                            <input type="text" id="max-price" class="form-control" placeholder="eg. $15000">
+                        </div><!--form group-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="min-area">Min. Area (Sq Ft)</label>
+                            <input type="text" id="min-area" class="form-control" placeholder="Sq Ft">
+                        </div><!--form group-->
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="max-area">Max. Area (Sq Ft)</label>
+                            <input type="text" id="max-area" class="form-control" placeholder="Sq Ft">
+                        </div><!--form group-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="beds">Beds</label>
+                            <select class="form-control" id="beds">
+                                <option> Beds</option>
+                                <option> 1</option>
+                                <option> 2</option>
+                                <option> 3</option>
+                                <option> 4</option>
+                                <option> 5</option>
+                            </select>
+                        </div><!--form group-->
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="max-area">Baths</label>
+                            <select class="form-control" id="baths">
+                                <option> Baths</option>
+                                <option> 1</option>
+                                <option> 2</option>
+                                <option> 3</option>
+                                <option> 4</option>
+                                <option> 5</option>
+                            </select>
+                        </div><!--form group-->
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Search</button>
+            </form>
+
+        </div>
+    </aside>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+    <!-- Top Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-transparent bg-faded nav-sticky">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img class='logo logo-dark' src="images/logo-pequeño-2.png" alt="">
+                <img class='logo logo-light hidden-md-down' src="images/logo-pequeño-3.png" alt="">
+            </a>
+            <div id="navbarNavDropdown" class="navbar-collapse collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">Home</a>
+                        <!--  <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="index.html" class="dropdown-item">Home 1 - Slider</a></li>
+                            <li><a href="index-02.html" class="dropdown-item">Home 2 - Search</a></li>
+
+
+                            <li><a href="index-03.html" class="dropdown-item">Home 3 - Youtube hero</a></li>
+                            <li><a href="index-landing.html" class="dropdown-item">Home 6 - Landing page</a></li>
+                            <li class=" dropdown-submenu dropdown">
+                                <a tabindex="-1" href="#" class="dropdown-item">Multi Level 1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">Multi Level 2</a></li>
+                                    <li><a href="#" class="dropdown-item">Multi Level 2</a></li>
+                                    <li><a href="#" class="dropdown-item">Multi Level 2</a></li>
+                                    <li class="dropdown-submenu"><a tabindex="-1" href="#" class="dropdown-item">Multi
+                                            Level 2</a>
+                                        <ul class="dropdown-menu">
+                                            <li> <a href="#" class="dropdown-item">Multi Level 3</a></li>
+                                            <li><a href="#" class="dropdown-item">Multi Level 3</a></li>
+                                            <li><a href="#" class="dropdown-item">Multi Level 3</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item dropdown dropdown-full-width">
+                        <a class="nav-link dropdown-toggle" href="#about" aria-haspopup="true" aria-expanded="false">
+                            Quiénes somos
+                        </a>
+                        <!--      <ul class="dropdown-menu dropdown-mega-fw dropdown-slide">
+                            <li class="container">
+                                <div class="mega-menu-content">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <ul class="mega-inner-nav list-unstyled">
+                                                <li><a href="page-about.html" class="dropdown-item">About Us</a></li>
+                                                <li><a href="page-login.html" class="dropdown-item">Login</a></li>
+                                                <li><a href="page-register.html" class="dropdown-item">Register</a></li>
+                                                <li><a href="page-faq.html" class="dropdown-item">FAQ</a></li>
+                                                <li><a href="page-404.html" class="dropdown-item">404 - Error</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-9">
+                                            <h4 class="mega-title">Recent properties</h4>
+                                            <div class="owl-carousel owl-theme owl-nav-slide">
+                                                <div class="item">
+                                                    <div class="listing-card">
+                                                        <a class="listing-thumb" href="#">
+                                                            <img src="images/prop1.jpg" alt="" class="img-fluid">
+                                                            <span class="listing-label sale">For Sale</span>
+                                                            <div class="listing-content">
+                                                                <h4 class="listing-title">Eastern Villa</h4>
+                                                                <div class="listing-price">$25,0000</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="listing-card">
+                                                        <a class="listing-thumb" href="#">
+                                                            <img src="images/prop2.jpg" alt="" class="img-fluid">
+                                                            <span class="listing-label rent">For Rent</span>
+                                                            <div class="listing-content">
+                                                                <h4 class="listing-title">Rose Homes</h4>
+                                                                <div class="listing-price">$2700/Monthly</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="listing-card">
+                                                        <a class="listing-thumb" href="#">
+                                                            <img src="images/prop3.jpg" alt="" class="img-fluid">
+                                                            <span class="listing-label rent">For Rent</span>
+                                                            <div class="listing-content">
+                                                                <h4 class="listing-title">Old House</h4>
+                                                                <div class="listing-price">$25,00/Monthly</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="listing-card">
+                                                        <a class="listing-thumb" href="#">
+                                                            <img src="images/prop4.jpg" alt="" class="img-fluid">
+                                                            <span class="listing-label sale">For Sale</span>
+                                                            <div class="listing-content">
+                                                                <h4 class="listing-title">Sharma Apartment</h4>
+                                                                <div class="listing-price">$25,0000</div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" aria-haspopup="true" aria-expanded="false"
+                            href="#services">Servicios</a>
+                        <!--      <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="listing-row.html" class="dropdown-item"> Listing row</a></li>
+                            <li><a href="listing-grid.html" class="dropdown-item">listing grid</a></li>
+                            <li><a href="listing-detail.html" class="dropdown-item">listing detail</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" aria-haspopup="true" aria-expanded="false"
+                            href="#cristals">Cristales y filtros</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" aria-haspopup="true" aria-expanded="false"
+                            href="#questions">Preguntas frecuentes</a>
+                        <!--  <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="blog.html" class="dropdown-item">Blog Page</a></li>
+                            <li><a href="blog-post.html" class="dropdown-item">Blog post</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item dropdown"><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+            <div class=" navbar-right-elements">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="javascript:void(0)" class=" menu-btn"><i
+                                class="ti-search"></i> </a></li>
+                </ul>
+            </div><!--right nav icons-->
+        </div>
+    </nav>
+
+    <div id="rev_slider_1078_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export"
+        data-source="gallery"
+        style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+        <!-- START REVOLUTION SLIDER 5.4.1 auto mode -->
+        <div id="rev_slider_1078_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+            <ul>
+                <!-- SLIDE  -->
+                <li data-index="rs-3045" data-transition="parallaxtoleft" data-slotamount="default"
+                    data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut"
+                    data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade"
+                    data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Intro"
+                    data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/20260114_175932.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                    <!-- LAYER NR. 1 -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption property-title text-center   tp-resizeme" id="slide-1706-layer-2"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['180','115','105','200']"
+                        data-fontsize="['55','55','40','30']" data-lineheight="['65','65','55','35']"
+                        data-width="['1140','700','621','420']" data-height="none" data-whitespace="normal"
+                        data-type="text" data-responsive_offset="on"
+                        data-frames='[{"delay":900,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 6; text-align:left; max-width:1170px; white-space: normal;">Más de 16 años
+                        cuidando tu salud visual, donde tú estés.</div>
+                    <!--          <div class="tp-caption property-price   tp-resizeme" id="slide-1706-layer-1"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['350','150','150','120']" data-width="none"
+                        data-height="none" data-whitespace="nowrap" data-fontsize="['20','20','20','20']"
+                        data-lineheight="['25','25','25','25']" data-type="text" data-responsive_offset="on"
+                        data-width="['940','700','621','420']" data-height="none" data-whitespace="normal"
+                        data-frames='[{"delay":1300,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 7; white-space: nowrap;text-transform:left;">Profesionales de la salud visual a
+                        tu servicio. Atención a domicilio en Santiago, operativos con alta tecnología a terreno y envíos
+                        seguros a todo Chile.</div> -->
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption mainSlide-Button btn btn-white-outline btn-rounded" id="slide-1706-layer-3"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['370','350','350','366']" data-width="none"
+                        data-height="none" data-whitespace="nowrap" data-type="button"
+                        data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                        data-responsive_offset="on" data-responsive="off"
+                        data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[12,12,12,12]"
+                        data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                        data-paddingleft="[35,35,35,35]"
+                        style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
+                        Ver catálogo</div>
+
+                </li>
+                <!-- SLIDE  -->
+                <li data-index="rs-3046" data-transition="parallaxtoleft" data-slotamount="default"
+                    data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut"
+                    data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade"
+                    data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Intro"
+                    data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/20260114_180347.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                    <div class="tp-caption property-title text-center   tp-resizeme" id="slide-1706-layer-2"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['180','115','105','200']"
+                        data-fontsize="['55','55','40','30']" data-lineheight="['65','65','55','35']"
+                        data-width="['1140','700','621','420']" data-height="none" data-whitespace="normal"
+                        data-type="text" data-responsive_offset="on"
+                        data-frames='[{"delay":900,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 6; text-align:left; max-width:1170px; white-space: normal;">Más de 16 años
+                        cuidando tu salud visual, donde tú estés.</div>
+                    <!--          <div class="tp-caption property-price   tp-resizeme" id="slide-1706-layer-1"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['350','150','150','120']" data-width="none"
+                        data-height="none" data-whitespace="nowrap" data-fontsize="['20','20','20','20']"
+                        data-lineheight="['25','25','25','25']" data-type="text" data-responsive_offset="on"
+                        data-width="['940','700','621','420']" data-height="none" data-whitespace="normal"
+                        data-frames='[{"delay":1300,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 7; white-space: nowrap;text-transform:left;">Profesionales de la salud visual a
+                        tu servicio. Atención a domicilio en Santiago, operativos con alta tecnología a terreno y envíos
+                        seguros a todo Chile.</div> -->
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption mainSlide-Button btn btn-white-outline btn-rounded" id="slide-1706-layer-3"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['370','350','350','366']" data-width="none"
+                        data-height="none" data-whitespace="nowrap" data-type="button"
+                        data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                        data-responsive_offset="on" data-responsive="off"
+                        data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[12,12,12,12]"
+                        data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                        data-paddingleft="[35,35,35,35]"
+                        style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
+                        Ver catálogo</div>
+                </li>
+                <!-- SLIDE  -->
+                <li data-index="rs-3047" data-transition="parallaxtoleft" data-slotamount="default"
+                    data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut"
+                    data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-fstransition="fade"
+                    data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Intro"
+                    data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6=""
+                    data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="images/20260114_180748.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
+                        data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+                    <div class="tp-caption property-title text-center   tp-resizeme" id="slide-1706-layer-2"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['180','115','105','200']"
+                        data-fontsize="['55','55','40','30']" data-lineheight="['65','65','55','35']"
+                        data-width="['1140','700','621','420']" data-height="none" data-whitespace="normal"
+                        data-type="text" data-responsive_offset="on"
+                        data-frames='[{"delay":900,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[10,10,10,10]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 6; text-align:left; max-width:1170px; white-space: normal;">Más de 16 años
+                        cuidando tu salud visual, donde tú estés.</div>
+                    <!--          <div class="tp-caption property-price   tp-resizeme" id="slide-1706-layer-1"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['350','150','150','120']" data-width="none"
+                        data-height="none" data-whitespace="nowrap" data-fontsize="['20','20','20','20']"
+                        data-lineheight="['25','25','25','25']" data-type="text" data-responsive_offset="on"
+                        data-width="['940','700','621','420']" data-height="none" data-whitespace="normal"
+                        data-frames='[{"delay":1300,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                        style="z-index: 7; white-space: nowrap;text-transform:left;">Profesionales de la salud visual a
+                        tu servicio. Atención a domicilio en Santiago, operativos con alta tecnología a terreno y envíos
+                        seguros a todo Chile.</div> -->
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption mainSlide-Button btn btn-white-outline btn-rounded" id="slide-1706-layer-3"
+                        data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                        data-y="['top','top','top','top']" data-voffset="['370','350','350','366']" data-width="none"
+                        data-height="none" data-whitespace="nowrap" data-type="button"
+                        data-actions='[{"event":"click","action":"scrollbelow","offset":"px","delay":""}]'
+                        data-responsive_offset="on" data-responsive="off"
+                        data-frames='[{"delay":2000,"speed":1500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                        data-textAlign="['left','left','left','left']" data-paddingtop="[12,12,12,12]"
+                        data-paddingright="[35,35,35,35]" data-paddingbottom="[12,12,12,12]"
+                        data-paddingleft="[35,35,35,35]"
+                        style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
+                        Ver catálogo</div>
+                </li>
+            </ul>
+            <div class="tp-bannertimer" style="height: 7px; background-color: rgba(255, 255, 255, 0.25);"></div>
+        </div>
+    </div><!-- END REVOLUTION SLIDER -->
+
+    <div class="container pt90 pb50">
+        <h3 class="left-title">Catálogo</h3>
+        <div class="row">
+            <div class="col-md-12 mb40">
+                <div class="owl-carousel owl-theme owl-nav-slide">
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <img src="images/20260114_180526.jpg" alt="" class="img-fluid img-catalogo">
+                                <span class="listing-label sale">En venta</span>
+                                <div class="listing-content">
+                                    <!-- <h4 class="listing-title">Eastern Villa</h4> -->
+                                    <div class="listing-price">$25.0000</div>
+                                </div>
+                            </a>
+                        </div><!--property-card-->
+                    </div><!--property-item-->
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <img src="images/20260114_175932.jpg" alt="" class="img-fluid img-catalogo">
+                                <span class="listing-label sale">En venta</span>
+                                <div class="listing-content">
+                                    <!-- <h4 class="listing-title">Eastern Villa</h4> -->
+                                    <div class="listing-price">$25.0000</div>
+                                </div>
+                            </a>
+                        </div><!--property-card-->
+                    </div><!--property-item-->
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <img src="images/20260114_180347.jpg" alt="" class="img-fluid img-catalogo">
+                                <span class="listing-label sale">En venta</span>
+                                <div class="listing-content">
+                                    <!-- <h4 class="listing-title">Rose Homes</h4> -->
+                                    <div class="listing-price">$27.000</div>
+                                </div>
+                            </a>
+                        </div><!--property-card-->
+                    </div><!--property-item-->
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <img src="images/20260114_180748.jpg" alt="" class="img-fluid img-catalogo">
+                                <span class="listing-label sale">En venta</span>
+                                <div class="listing-content">
+                                    <!-- <h4 class="listing-title">Old House</h4> -->
+                                    <div class="listing-price">$25.000</div>
+                                </div>
+                            </a>
+                        </div><!--property-card-->
+                    </div><!--property-item-->
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <img src="images/20260114_180929.jpg" alt="" class="img-fluid img-catalogo">
+                                <span class="listing-label sale">En venta</span>
+                                <div class="listing-content">
+                                    <!-- <h4 class="listing-title">Sharma Apartment</h4> -->
+                                    <div class="listing-price">$25.0000</div>
+                                </div>
+                            </a>
+                        </div><!--property-card-->
+                    </div><!--property-item-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  <div class="bg-faded pt90 pb50 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb40 text-center">
+                    <i class="ti-user fa-4x text-primary"></i>
+                    <h4 class="text-uppercase font500  pt30 pb10">Best Agents</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="col-md-4 mb40 text-center">
+                    <i class="ti-palette fa-4x text-primary"></i>
+                    <h4 class="text-uppercase font500  pt30 pb10">Modern tools</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="col-md-4 mb40 text-center">
+                    <i class="ti-cup fa-4x text-primary"></i>
+                    <h4 class="text-uppercase font500 pt30 pb10">Award winners</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div> -->
+    </div>
+    <div class="white-page-content" id="about">
+        <div class="container pt0 pb30">
+            <h3 class="left-title mt0 mb60">Sobre nosotros</h3>
+
+            <div class="row align-items-center mb40">
+
+                <div class="col-md-4 mb40 text-center">
+                    <img src="images/IMG-20250528-WA0045.jpg" alt="" class="img-fluid img-center mb20 img-only">
+                    <h4 class="font700 text-uppercase">Marine Smith <small><em>Ceo</em> </small></h4>
+                </div>
+                <div class='col-md-7 mb40'>
+                    <h2><span class="tritary-font text-primary">¿Quiénes</span> somos?</h2>
+                    <p class="lead">
+                        En Óptica JyC somos un equipo de profesionales de la salud visual con más de 16 años de
+                        experiencia en el rubro.
+
+                        Nos diferenciamos por nuestra movilidad y respaldo técnico, realizando exámenes visuales
+                        completos en terreno y confeccionando lentes personalizados.
+                    </p>
+                    <!--<p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit ipsum dolor sit amet, consectetur
+                        adipiscing elit.
+                    </p> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".01s">
+                    <h4 class='mb30'><i class='ti-star mr-2 text-primary'></i>Misión</h4>
+                    <p>
+                        Nuestra misión es brindar soluciones de salud visual integrales y personalizadas,
+                        combinando más de 16 años de experiencia profesional con tecnología de vanguardia.
+                    </p>
+                </div>
+                <div class="col-md-6 mb30 wow fadeInUp" data-wow-delay=".04s">
+                    <h4 class='mb30'><i class='ti-eye mr-2 text-primary'></i>Visión</h4>
+                    <p>
+                        Ser la óptica líder en servicios ópticos móviles y digitales en el país, reconocida
+                        por fusionar la precisión clínica con la comodidad del hogar.
+                    </p>
+                </div>
+                <!--<div class="col-md-4 mb30 wow fadeInUp" data-wow-delay=".05s">
+                    <h4 class='mb30'><i class='ti-cup mr-2 text-primary'></i> Best Awarded Group</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <!-- <div class="container pt50 pb40">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <div class="center-title mb60 ">
+                        <h3>Our Agents</h3>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb40">
+                    <div class="agent-card">
+                        <a href="agent-detail.html" class="agent-hover">
+                            <img src="images/agent1.jpg" alt="" class="img-fluid">
+                            <span>See Detail</span>
+                        </a>
+                        <div class="agent-desc">
+                            <h4 class="font500 text-uppercase text-primary">Cartly Embrose</h4>
+                            <span>Agent In London</span>
+                            <hr>
+                            <div class="clearfix">
+                                <a href="#" class="social-icon-sm si-gray si-facebook si-gray-round">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-twitter si-gray-round">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-g-plus si-gray-round">
+                                    <i class="fa fa-google-plus"></i>
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-skype si-gray-round">
+                                    <i class="fa fa-skype"></i>
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <div class="agent-card">
+                        <a href="agent-detail.html" class="agent-hover">
+                            <img src="images/agent2.jpg" alt="" class="img-fluid">
+                            <span>See Detail</span>
+                        </a>
+                        <div class="agent-desc">
+                            <h4 class="font500 text-uppercase text-primary">Mark Adams</h4>
+                            <span>Agent In London</span>
+                            <hr>
+                            <div class="clearfix">
+                                <a href="#" class="social-icon-sm si-gray si-facebook si-gray-round">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-twitter si-gray-round">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-g-plus si-gray-round">
+                                    <i class="fa fa-google-plus"></i>
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-skype si-gray-round">
+                                    <i class="fa fa-skype"></i>
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <div class="agent-card">
+                        <a href="agent-detail.html" class="agent-hover">
+                            <img src="images/agent3.jpg" alt="" class="img-fluid">
+                            <span>See Detail</span>
+                        </a>
+                        <div class="agent-desc">
+                            <h4 class="font500 text-uppercase text-primary">John Doe</h4>
+                            <span>Agent In Birmingham</span>
+                            <hr>
+                            <div class="clearfix">
+                                <a href="#" class="social-icon-sm si-gray si-facebook si-gray-round">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-twitter si-gray-round">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-g-plus si-gray-round">
+                                    <i class="fa fa-google-plus"></i>
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-skype si-gray-round">
+                                    <i class="fa fa-skype"></i>
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <div class="agent-card">
+                        <a href="agent-detail.html" class="agent-hover">
+                            <img src="images/agent4.jpg" alt="" class="img-fluid">
+                            <span>See Detail</span>
+                        </a>
+                        <div class="agent-desc">
+                            <h4 class="font500 text-uppercase text-primary">Emily Milinda</h4>
+                            <span>Agent In Menchester</span>
+                            <hr>
+                            <div class="clearfix">
+                                <a href="#" class="social-icon-sm si-gray si-facebook si-gray-round">
+                                    <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-twitter si-gray-round">
+                                    <i class="fa fa-twitter"></i>
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-g-plus si-gray-round">
+                                    <i class="fa fa-google-plus"></i>
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                                <a href="#" class="social-icon-sm si-gray si-skype si-gray-round">
+                                    <i class="fa fa-skype"></i>
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> -->
+        <!--    <div class="bg-faded pt100 pb100 bg-primary parallax-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto">
+                        <div class="center-title mb60 light">
+                            <h3>Customer Say about me</h3>
+                            <p class="lead">
+                                We collect reviews from our customers so you can easily imagine why we are the best,
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="owl-carousel owl-reviews owl-theme">
+                        <div class="item ">
+                            <div class="review-card">
+                                <div class="review-author text-center">
+                                    <img src='images/author1.jpg' alt='' class='img-fluid'>
+                                    <h5>Emily Doe</h5>
+                                    <span>Assan Customer</span>
+                                </div>
+                                <p class='lead'>
+                                    " Very good package i ever seen, lot's of templates and elements that help me to
+                                    create an easy website "
+                                </p>
+                                <ul class='rating list-inline'>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="review-card">
+                                <div class="review-author text-center">
+                                    <img src='images/author2.jpg' alt='' class='img-fluid'>
+                                    <h5>John Doe</h5>
+                                    <span>Assan Customer</span>
+                                </div>
+                                <p class='lead'>
+                                    " Very good package i ever seen, lot's of templates and elements that help me to
+                                    create an easy website "
+                                </p>
+                                <ul class='rating list-inline'>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="review-card">
+                                <div class="review-author text-center">
+                                    <img src='images/author3.jpg' alt='' class='img-fluid'>
+                                    <h5>Robin Ambrose</h5>
+                                    <span>Assan Customer</span>
+                                </div>
+                                <p class='lead'>
+                                    " Very good package i ever seen, lot's of templates and elements that help me to
+                                    create an easy website "
+                                </p>
+                                <ul class='rating list-inline'>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item ">
+                            <div class="review-card">
+                                <div class="review-author text-center">
+                                    <img src='images/author1.jpg' alt='' class='img-fluid'>
+                                    <h5>Gunjan Sharma</h5>
+                                    <span>Assan Customer</span>
+                                </div>
+                                <p class='lead'>
+                                    " Very good package i ever seen, lot's of templates and elements that help me to
+                                    create an easy website "
+                                </p>
+                                <ul class='rating list-inline'>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                    <li class='fa fa-star text-warning'></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> --><!--reviews-->
+        <!--  <div class="bg-faded">
+            <div class="container pt90 pb90">
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto">
+                        <div class="center-title mb40 ">
+                            <h3>Get updates</h3>
+                            <p>
+                                Subscribe to our newsletter and get latest offers update
+                            </p>
+                        </div>
+                        <form>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Email Id..."
+                                    aria-describedby="basic-addon2">
+                                <button class="input-group-addon btn btn-primary" id="basic-addon2">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" pt50 pb30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <img src="images/cl-1.png" alt="" class="img-fluid img-center mb20">
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="images/cl-2.png" alt="" class="img-fluid img-center mb20">
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="images/cl-3.png" alt="" class="img-fluid img-center mb20">
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="images/cl-4.png" alt="" class="img-fluid img-center mb20">
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="images/cl-5.png" alt="" class="img-fluid img-center mb20">
+                    </div>
+                    <div class="col-sm-2">
+                        <img src="images/cl-2.png" alt="" class="img-fluid img-center mb20">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ -->
+    </div>
+    <div class="our-service-container" id="services">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                <div class="center-title mb60 ">
+                    <h3>Nuestros servicios</h3>
+                </div>
+            </div>
+        </div>
+        <div class="our-service-card-container">
+            <div class="our-service-card">
+                <i class="fa fa-laptop" style="color:#044353"></i>
+                <h3>Venta Online Asistida</h3>
+                <p>
+                    Explora nuestro catálogo digital y recibe asesoría personalizada
+                    durante todo el proceso de compra.
+                </p>
+            </div>
+            <div class="our-service-card">
+                <i class="fa fa-home" style="color:#044353"></i>
+                <h3>Atención a domicilio</h3>
+                <p>
+                    Llevamos la óptica a tu hogar en Santiago para una atención cómoda y profesional.
+                </p>
+            </div>
+            <div class="our-service-card">
+                <i class="fa fa-map-marker" style="color:#044353"></i>
+                <h3>Operativos a Terreno</h3>
+                <p>
+                    Exámenes visuales completos para empresas, instituciones y comunidades.
+                </p>
+            </div>
+            <div class="our-service-card">
+                <i class="fa fa-truck" style="color:#044353"></i>
+                <h3>Envíos a Todo Chile</h3>
+                <p>
+                    Despachamos tus lentes con rapidez y total seguridad a cualquier región.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <!--  <div class="container pt100 pb50">
+        <h3 class="left-title">Featured Property</h3>
+        <div class="row">
+            <div class="col-md-12 mb40">
+                <div class="owl-carousel owl-theme owl-nav-slide">
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <span class="featured">Featured</span>
+                                <img src="images/prop8.jpg" alt="" class="img-fluid">
+                                <span class="listing-label sale">En venta</span>
+                                <div class="listing-content">
+                                    <h4 class="listing-title">Eastern Villa</h4>
+                                    <div class="listing-price">$25,0000</div>
+                                </div>
+                            </a>
+                            <ul class="listing-meta list-inline">
+                                <li class="list-inline-item">
+                                    <span>Area</span>
+                                    400 Sq Ft
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Room</span>
+                                    3
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Beds</span>
+                                    3
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Baths</span>
+                                    1
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <span class="featured">Featured</span>
+                                <img src="images/prop7.jpg" alt="" class="img-fluid">
+                                <span class="listing-label rent">For Rent</span>
+                                <div class="listing-content">
+                                    <h4 class="listing-title">Rose Homes</h4>
+                                    <div class="listing-price">$2700/Monthly</div>
+                                </div>
+                            </a>
+                            <ul class="listing-meta list-inline">
+                                <li class="list-inline-item">
+                                    <span>Area</span>
+                                    400 Sq Ft
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Room</span>
+                                    3
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Beds</span>
+                                    3
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Baths</span>
+                                    1
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <span class="featured">Featured</span>
+                                <img src="images/prop6.jpg" alt="" class="img-fluid">
+                                <span class="listing-label rent">For Rent</span>
+                                <div class="listing-content">
+                                    <h4 class="listing-title">Old House</h4>
+                                    <div class="listing-price">$25,00/Monthly</div>
+                                </div>
+                            </a>
+                            <ul class="listing-meta list-inline">
+                                <li class="list-inline-item">
+                                    <span>Area</span>
+                                    400 Sq Ft
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Room</span>
+                                    3
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Beds</span>
+                                    3
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Baths</span>
+                                    1
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="listing-card">
+                            <a class="listing-thumb" href="#">
+                                <span class="featured">Featured</span>
+                                <img src="images/prop5.jpg" alt="" class="img-fluid">
+                                <span class="listing-label sale">En venta</span>
+                                <div class="listing-content">
+                                    <h4 class="listing-title">Sharma Apartment</h4>
+                                    <div class="listing-price">$25,0000</div>
+                                </div>
+                            </a>
+                            <ul class="listing-meta list-inline">
+                                <li class="list-inline-item">
+                                    <span>Area</span>
+                                    400 Sq Ft
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Room</span>
+                                    3
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Beds</span>
+                                    3
+                                </li>
+                                <li class="list-inline-item">
+                                    <span>Baths</span>
+                                    1
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> --><!--featured properties-->
+    <div class="bg-faded pt100 pb100 bg-parallax" data-jarallax='{"speed": 0.2}'
+        style='background-image: url("images/a-domicilio-2.png")'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <div class="center-title mb60 light">
+                        <h3>Testimonios</h3>
+                        <p class="lead">
+                            Lo que dicen nuestros pacientes sobre el servicio a domicilio y en terreno:
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="owl-carousel owl-reviews owl-theme">
+                    <div class="item ">
+                        <div class="review-card">
+                            <div class="review-author text-center">
+                                <img src='images/author1.png' alt='' class='img-fluid'>
+                                <h5>Emily Rojas</h5>
+                                <span>Cliente Satisfecho (Santiago)</span>
+                            </div>
+                            <p class='lead'>
+                                "Excelente atención y asesoría. Recibí mis lentes progresivos rápidamente
+                                y con la receta perfecta en la comodidad de mi casa."
+                            </p>
+                            <ul class='rating list-inline'>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                            </ul>
+                        </div>
+                    </div><!--/.items-->
+                    <div class="item ">
+                        <div class="review-card">
+                            <div class="review-author text-center">
+                                <img src='images/author2.png' alt='' class='img-fluid'>
+                                <h5>Jonathan Lara</h5>
+                                <span>Cliente Satisfecho (Terreno)</span>
+                            </div>
+                            <p class='lead'>
+                                "Muy cómodo el servicio a domicilio para adultos mayores.
+                                El respaldo clínico de los profesionales te da total seguridad. Lo recomiendo
+                                completamente."
+                            </p>
+                            <ul class='rating list-inline'>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                            </ul>
+                        </div>
+                    </div><!--/.items-->
+                    <div class="item ">
+                        <div class="review-card">
+                            <div class="review-author text-center">
+                                <img src='images/author3.png' alt='' class='img-fluid'>
+                                <h5>Roberto Zambrano</h5>
+                                <span>Cliente Satisfecho (Terreno)</span>
+                            </div>
+                            <p class='lead'>
+                                "Iba con muchas dudas sobre qué tipo de marco le quedaba mejor a mi rostro y el personal
+                                me asesoró con una paciencia increíble. Además, los cristales con filtro azul son de
+                                excelente
+                                calidad, ya no me canso frente a la computadora. ¡Un 10 de 10!"
+                            </p>
+                            <ul class='rating list-inline'>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                            </ul>
+                        </div>
+                    </div><!--/.items-->
+                    <div class="item ">
+                        <div class="review-card">
+                            <div class="review-author text-center">
+                                <img src='images/author4.png' alt='' class='img-fluid'>
+                                <h5>Valeria Osses</h5>
+                                <span>Cliente Satisfecho (Temuco)</span>
+                            </div>
+                            <p class='lead'>
+                                "Me encantó la experiencia en la óptica. Tenían muchísima variedad
+                                de marcos modernos y el examen de la vista fue súper profesional y detallado.
+                                Mis nuevos lentes listos en pocos días y veo perfecto. ¡Totalmente recomendados!"
+                            </p>
+                            <ul class='rating list-inline'>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                                <li class='fa fa-star text-warning'></li>
+                            </ul>
+                        </div>
+                    </div><!--/.items-->
+                </div>
+
+            </div>
+        </div>
+    </div><!--reviews-->
+    <div class="container pt80 pb80">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                <div class="center-title mb60 ">
+                    <h3>¿Por Qué Elegirnos?</h3>
+                    <!-- <p class="lead">
+                        Most popular places, Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p> -->
+                </div>
+            </div>
+        </div>
+        <div class="clearfix">
+            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat">
+                <div class="cbp-item web-design graphic">
+
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="images/london.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap places-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">Más de 16 años de experiencia profesional.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--place item-->
+                <div class="cbp-item web-design graphic">
+
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="images/liverpool.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap places-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">Tecnología de última generación.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--place item-->
+                <div class="cbp-item web-design graphic">
+
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="images/manchester.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap places-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">Atención personalizada.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--place item-->
+                <div class="cbp-item web-design graphic">
+
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="images/bristol.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap places-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">Lentes confeccionados a medida.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--place item-->
+                <div class="cbp-item web-design graphic">
+
+                    <div class="cbp-caption-defaultWrap">
+                        <img src="images/birmingham.jpg" alt="">
+                    </div>
+                    <div class="cbp-caption-activeWrap">
+                        <div class="cbp-l-caption-alignCenter">
+                            <div class="cbp-l-caption-body">
+                                <div class="cbp-l-caption-title">Atención presencial, online y a domicilio.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--place item-->
+            </div>
+        </div>
+    </div><!--popular places-->
+    <div class="bg-faded pt80 pb40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <div class="center-title mb60 ">
+                        <h3>Nuestras garantias</h3>
+                        <p class="lead">
+                            Tu salud visual y tu inversión están respaldadas por profesionales:
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb40">
+                    <div class="agent-card">
+
+                        <img src="images/agent1.png" alt="" class="img-fluid">
+
+                        <div class="agent-desc">
+                            <h4 class="font500 text-uppercase text-primary">Receta Médica</h4>
+                            <span>Garantía de adaptación total de tu receta óptica.</span>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <div class="agent-card">
+
+                        <img src="images/agent2.png" alt="" class="img-fluid">
+
+                        <div class="agent-desc">
+                            <h4 class="font500 text-uppercase text-primary">30 Días</h4>
+                            <span>Garantía completa en lentes progresivos durante 30 días.</span>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <div class="agent-card">
+
+                        <img src="images/agent3.png" alt="" class="img-fluid">
+
+                        <div class="agent-desc">
+                            <h4 class="font500 text-uppercase text-primary">1 año</h4>
+                            <span>1 año de garantía extendida en la calidad de tus cristales.</span>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <div class="agent-card">
+
+                        <img src="images/agent4.png" alt="" class="img-fluid">
+
+                        <div class="agent-desc">
+                            <h4 class="font500 text-uppercase text-primary">Marcos</h4>
+                            <span>Protección total por fallas o defectos de fábrica en tus marcos.</span>
+                            <hr>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    <div class="bg-faded pt100 pb100 bg-parallax parallax-overlay call-to-action" data-jarallax='{"speed": 0.2}'
+        style='background-image: url("images/bg5.jpg")'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="text-white font300">If you need any Real Estate related service, don't hesitate to
+                        contact us!</h2>
+                </div>
+                <div class="col-md-4">
+                    <a href="listing-grid.html" class="btn btn-lg btn-white-outline">Browse Properties</a>
+                </div>
+            </div>
+        </div>
+    </div> --><!--call to action-->
+
+    <div class="container pt90 pb50" id="cristals">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                <div class="center-title mb60 ">
+                    <h3>Guía de Cristales y Filtros</h3>
+                    <p class="lead">
+                        Tipos de Cristales
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb40">
+                <div class="news-card">
+                    <a href="#" class="news-thumb" data-toggle="modal" data-target="#modalMonofocal"
+                        data-bs-toggle="modal" data-bs-target="#modalMonofocal">
+                        <img src="images/monofocal-info.jpg" alt="Monofocales" class="img-fluid">
+                        <div class="news-overlay">
+
+                            <h3>Monofocales (Una sola distancia)</h3>
+                        </div>
+                    </a>
+                    <div class="news-content">
+                        <p>
+                            ¿Qué son? Tienen una única fuerza de aumento en todo el cristal.
+                            ¿Para quién son? Ideales si solo necesitas lentes para una cosa en específico.
+                            Ver de lejos (como manejar o ver televisión) o ver de cerca
+                            (como leer un libro o coser).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb40">
+                <div class="news-card">
+                    <a href="#" class="news-thumb" data-toggle="modal" data-target="#modalBifocal"
+                        data-bs-toggle="modal" data-bs-target="#modalBifocal">
+                        <img src="images/bifocal-info.jpg" alt="Bifocales" class="img-fluid">
+                        <div class="news-overlay">
+
+                            <h3>Bifocales (Dos distancias con línea divisora)</h3>
+                        </div>
+                    </a>
+                    <div class="news-content">
+                        <p>
+                            ¿Qué son? Cristales divididos en dos partes visibles.
+                            La parte superior sirve para ver de lejos y la pequeña "luneta"
+                            de abajo sirve para leer de cerca.¿Para quién son? Para quienes
+                            necesitan corregir ambas distancias en un mismo lente y están
+                            acostumbrados al diseño tradicional.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb40">
+                <div class="news-card">
+                    <a href="#" class="news-thumb" data-toggle="modal" data-target="#modalProgresivo"
+                        data-bs-toggle="modal" data-bs-target="#modalProgresivo">
+                        <img src="images/progresivo-info.jpg" alt="Progresivos" class="img-fluid">
+                        <div class="news-overlay">
+
+                            <h3>Progresivos / Multifocales (Todas las distantias en un solo lente, sin líneas)</h3>
+                        </div>
+                    </a>
+                    <div class="news-content">
+                        <p>
+                            ¿Qué son? La tecnología más moderna. Cambian de aumento de forma gradual y fluida:
+                            la parte superior es para lejos, el centro para distancias intermedias (como la pantalla
+                            del computador) y la parte inferior para cerca (el celular). ¡Y todo sin ninguna línea
+                            marcada en el cristal! ¿Para quién son? Perfectos para mayores de 40 años que buscan
+                            comodidad total, estética impecable y no quieren estar cambiando de lentes a cada rato.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalMonofocal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body p-0 text-center" style="position: relative;">
+                    <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal"
+                        aria-label="Close"
+                        style="position: absolute; right: 15px; top: 15px; background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 5px 12px; border-radius: 50%; z-index: 9999; cursor: pointer;">&times;</button>
+                    <img src="images/monofocal-info.jpg" class="img-fluid"
+                        style="max-height: 85vh; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBifocal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body p-0 text-center" style="position: relative;">
+                    <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal"
+                        aria-label="Close"
+                        style="position: absolute; right: 15px; top: 15px; background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 5px 12px; border-radius: 50%; z-index: 9999; cursor: pointer;">&times;</button>
+                    <img src="images/bifocal-info.jpg" class="img-fluid"
+                        style="max-height: 85vh; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalProgresivo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body p-0 text-center" style="position: relative;">
+                    <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal"
+                        aria-label="Close"
+                        style="position: absolute; right: 15px; top: 15px; background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 5px 12px; border-radius: 50%; z-index: 9999; cursor: pointer;">&times;</button>
+                    <img src="images/progresivo-info.jpg" class="img-fluid"
+                        style="max-height: 85vh; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container pt90 pb50">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                <div class="center-title mb60 ">
+
+                    <p class="lead">
+                        Tratamientos y Filtros
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb40">
+                <div class="news-card">
+                    <a href="#" class="news-thumb" data-toggle="modal" data-target="#modalAntirreflejo"
+                        data-bs-toggle="modal" data-bs-target="#modalAntirreflejo">
+                        <img src="images/antirreflejo-info.jpg" alt="Antirreflejo" class="img-fluid filter-img">
+                        <div class="news-overlay">
+
+                            <h3>Antirreflejo (Adiós a los brillos molestos)</h3>
+                        </div>
+                    </a>
+                    <div class="news-content">
+                        <p>
+                            Elimina los reflejos de luz en tus cristales. Hace que tus
+                            ojos se vean claramente (sin el efecto espejo en las fotos)
+                            y reduce la fatiga visual al manejar de noche, evitando el
+                            encandilamiento de los focos de otros autos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb40">
+                <div class="news-card">
+                    <a href="#" class="news-thumb" data-toggle="modal" data-target="#modalFiltroAzul"
+                        data-bs-toggle="modal" data-bs-target="#modalFiltroAzul">
+                        <img src="images/filtroazul-info.jpg" alt="Filtro Azul" class="img-fluid filter-img">
+                        <div class="news-overlay">
+
+                            <h3>Filtro Azul (Escudo para pantallas)</h3>
+                        </div>
+                    </a>
+                    <div class="news-content">
+                        <p>
+                            Bloquea la luz dañina que emiten los celulares, computadores, televisores
+                            y luces LED. Evita el cansancio ocular, el enrojecimiento y los dolores de
+                            cabeza causados por estar muchas horas trabajando frente a pantallas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb40">
+                <div class="news-card">
+                    <a href="#" class="news-thumb" data-toggle="modal" data-target="#modalFotocromatico"
+                        data-bs-toggle="modal" data-bs-target="#modalFotocromatico">
+                        <img src="images/fotocromatico-info.jpg" alt="Fotocromático" class="img-fluid filter-img">
+                        <div class="news-overlay">
+
+                            <h3>Fotocromático (Dos lentes en uno: transparente y de sol)</h3>
+                        </div>
+                    </a>
+                    <div class="news-content">
+                        <p>
+                            Cristales inteligentes que reaccionan a la luz del sol. En interiores o
+                            de noche son completamente transparentes, pero al salir al aire libre se
+                            oscurecen automáticamente para protegerte de los rayos UV. ¡Comodidad
+                            total en cualquier ambiente!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAntirreflejo" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body p-0 text-center" style="position: relative;">
+                    <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal"
+                        aria-label="Close"
+                        style="position: absolute; right: 15px; top: 15px; background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 5px 12px; border-radius: 50%; z-index: 9999; cursor: pointer;">&times;</button>
+                    <img src="images/antirreflejo-info.jpg" class="img-fluid"
+                        style="max-height: 85vh; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFiltroAzul" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body p-0 text-center" style="position: relative;">
+                    <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal"
+                        aria-label="Close"
+                        style="position: absolute; right: 15px; top: 15px; background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 5px 12px; border-radius: 50%; z-index: 9999; cursor: pointer;">&times;</button>
+                    <img src="images/filtroazul-info.jpg" class="img-fluid"
+                        style="max-height: 85vh; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFotocromatico" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body p-0 text-center" style="position: relative;">
+                    <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal"
+                        aria-label="Close"
+                        style="position: absolute; right: 15px; top: 15px; background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 5px 12px; border-radius: 50%; z-index: 9999; cursor: pointer;">&times;</button>
+                    <img src="images/fotocromatico-info.jpg" class="img-fluid"
+                        style="max-height: 85vh; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container pt90 pb50">
+        <div class="row">
+            <div class="col-md-8 mr-auto ml-auto">
+                <div class="center-title mb60 ">
+
+                    <p class="lead">
+                        Lentes de Sol
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb40">
+                <div class="news-card">
+                    <a href="#" class="news-thumb" data-toggle="modal" data-target="#modalTintes" data-bs-toggle="modal"
+                        data-bs-target="#modalTintes">
+                        <img src="images/tintes-info.jpg" alt="Lentes teñidos" class="img-fluid">
+                        <div class="news-overlay">
+
+                            <h3>Lentes teñidos (Protección con estilo)</h3>
+                        </div>
+                    </a>
+                    <div class="news-content">
+                        <ul>
+                            <li>
+                                <p>Tinte Café: Mejora el contraste y la profundidad de los objetos. Es el color más
+                                    cómodo
+                                    para el día a día, ideal para realizar actividades al aire libre y perfecto para
+                                    personas
+                                    con ojos sensibles.</p>
+                            </li>
+                            <li>
+                                <p>Tinte Gris: El más equilibrado. Reduce la intensidad de la luz general sin alterar
+                                    los
+                                    colores de la naturaleza. Todo se ve con su color real, ideal para manejar en días
+                                    muy soleados.</p>
+                            </li>
+                            <li>
+                                <p>Tinte Verde: Reduce el cansancio visual en días de luminosidad variable
+                                    (nublado/soleado).
+                                    Ofrece una visión muy nítida y un estilo clásico inigualable.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb40">
+                <div class="news-card">
+                    <a href="#" class="news-thumb" data-toggle="modal" data-target="#modalPolarizados"
+                        data-bs-toggle="modal" data-bs-target="#modalPolarizados">
+                        <img src="images/polarizado-info.png" alt="Cristales Polarizados" class="img-fluid">
+                        <div class="news-overlay">
+
+                            <h3>Cristales Polarizados (Máxima Visión sin Reflejos)</h3>
+                        </div>
+                    </a>
+                    <div class="news-content">
+                        <p>
+                            ¿Qué son?: Van un paso más allá del lente de sol común. Tienen un filtro especial
+                            que bloquea el resplandor que rebota en superficies planas como el pavimento mojado,
+                            el agua, la nieve o el capó de los autos. ¿Por qué elegirlos?: Eliminan el 100% del
+                            brillo molesto. Son obligatorios para conductores frecuentes, pescadores, deportistas
+                            o cualquier persona que busque una visión ultra nítida, segura y descansada bajo el sol.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalTintes" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body p-0 text-center" style="position: relative;">
+
+                    <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal"
+                        aria-label="Close"
+                        style="position: absolute; right: 15px; top: 15px; background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 5px 12px; border-radius: 50%; z-index: 9999; cursor: pointer;">&times;</button>
+
+                    <img src="images/tintes-info.jpg" class="img-fluid"
+                        style="max-height: 85vh; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPolarizados" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body p-0 text-center" style="position: relative;">
+
+                    <button type="button" class="btn-close" data-dismiss="modal" data-bs-dismiss="modal"
+                        aria-label="Close"
+                        style="position: absolute; right: 15px; top: 15px; background-color: rgba(0,0,0,0.5); color: white; border: none; font-size: 24px; padding: 5px 12px; border-radius: 50%; z-index: 9999; cursor: pointer;">&times;</button>
+
+                    <img src="images/polarizado-info.png" class="img-fluid"
+                        style="max-height: 85vh; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-faded">
+        <div class="container pt0 pb30">
+            <h3 class="left-title">Atención a Domicilio</h3>
+        </div>
+        <div class="container mb50">
+            <div class="row">
+
+                <div class="col-md-3 col-sm-6 mb30 mb30-5 text-center">
+                    <div class="homecare-img-container" style="width: 110px; height: 110px; margin: 0 auto 20px; display: flex; align-items: center;
+                     justify-content: center; border-radius: 12px; overflow: hidden;">
+
+                        <img src="images/calendario.png" alt="Calendario de Agendamiento" style="width: 100%; height: 100%; object-fit: contain;
+                         opacity: 0.9; transform: scale(2);">
+                    </div>
+                    <p style="text-align: left; font-size: 15px; line-height: 1.5; color: #444;">
+                        Agenda tu hora a través de nuestros canales de atención.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb30 mb30-5 text-center">
+                    <div class="homecare-img-container" style="max-width: 90px; margin: 0 auto 20px;">
+
+                        <img src="images/visita.png" alt="visita" class="img-fluid mx-auto d-block"
+                            style="opacity: 0.9;">
+                    </div>
+                    <p style="text-align: left; font-size: 15px; line-height: 1.5; color: #444;">
+                        Visitamos tu domicilio en Santiago con más de 180 modelos de marcos.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb30 mb30-5 text-center">
+                    <div class="homecare-img-container" style="max-width: 90px; margin: 0 auto 20px;">
+
+                        <img src="images/clinica.png" alt="Laboratorio de Cristales Ópticos"
+                            class="img-fluid mx-auto d-block" style="opacity: 0.9;">
+                    </div>
+                    <p style="text-align: left; font-size: 15px; line-height: 1.5; color: #444;">
+                        Fabricamos tus lentes con precisión clínica y respaldo técnico.
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-sm-6 mb30 mb30-5 text-center">
+                    <div class="homecare-img-container" style="max-width: 90px; margin: 0 auto 20px;">
+
+                        <img src="images/entrega.png" alt="Entrega de Lentes a Domicilio"
+                            class="img-fluid mx-auto d-block" style="opacity: 0.9;">
+                    </div>
+                    <p style="text-align: left; font-size: 15px; line-height: 1.5; color: #444;">
+                        Entregamos el producto final directamente en la comodidad de tu hogar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-faded">
+        <div class="container pt0 pb30">
+            <h3 class="left-title">Compra online asistida</h3>
+        </div>
+        <div class="container mb50">
+            <div class="row">
+
+                <div class="col-md-6 col-sm-12 mb40 text-center">
+                    <div class="step-visual-container"
+                        style="position: relative; width: 120px; height: 120px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+
+                        <span
+                            style="position: absolute; top: 0; right: 0; background: #444; color: #fff; width: 26px; height: 26px; border-radius: 50%; font-size: 14px; font-weight: bold; display: flex; align-items: center; justify-content: center; z-index: 2;">1</span>
+
+                        <img src="images/catalogo.png" alt="Catálogo"
+                            style="width: 100%; height: 100%; object-fit: contain; transform: scale(1.4); opacity: 0.9;">
+                    </div>
+                    <p
+                        style="text-align: center; font-size: 16px; line-height: 1.5; color: #444; max-width: 320px; margin: 0 auto;">
+                        Selecciona tu marco ideal desde nuestro catálogo digital.
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb40 text-center">
+                    <div class="step-visual-container"
+                        style="position: relative; width: 120px; height: 120px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                        <span
+                            style="position: absolute; top: 0; right: 0; background: #444; color: #fff; width: 26px; height: 26px; border-radius: 50%; font-size: 14px; font-weight: bold; display: flex; align-items: center; justify-content: center; z-index: 2;">2</span>
+
+                        <img src="images/receta.png" alt="Receta"
+                            style="width: 100%; height: 100%; object-fit: contain; transform: scale(1.4); opacity: 0.9;">
+                    </div>
+                    <p
+                        style="text-align: center; font-size: 16px; line-height: 1.5; color: #444; max-width: 320px; margin: 0 auto;">
+                        Envía tu receta óptica vigente de forma digital.
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb40 text-center">
+                    <div class="step-visual-container"
+                        style="position: relative; width: 120px; height: 120px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                        <span
+                            style="position: absolute; top: 0; right: 0; background: #444; color: #fff; width: 26px; height: 26px; border-radius: 50%; font-size: 14px; font-weight: bold; display: flex; align-items: center; justify-content: center; z-index: 2;">3</span>
+
+                        <img src="images/fabricacion.png" alt="Fabricación"
+                            style="width: 100%; height: 100%; object-fit: contain; transform: scale(1.4); opacity: 0.9;">
+                    </div>
+                    <p
+                        style="text-align: center; font-size: 16px; line-height: 1.5; color: #444; max-width: 320px; margin: 0 auto;">
+                        Fabricamos tus cristales con los filtros personalizados que elegiste.
+                    </p>
+                </div>
+
+                <div class="col-md-6 col-sm-12 mb40 text-center">
+                    <div class="step-visual-container"
+                        style="position: relative; width: 120px; height: 120px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center;">
+                        <span
+                            style="position: absolute; top: 0; right: 0; background: #444; color: #fff; width: 26px; height: 26px; border-radius: 50%; font-size: 14px; font-weight: bold; display: flex; align-items: center; justify-content: center; z-index: 2;">4</span>
+
+                        <img src="images/reparto.png" alt="Despacho"
+                            style="width: 100%; height: 100%; object-fit: contain; transform: scale(1.4); opacity: 0.9;">
+                    </div>
+                    <p
+                        style="text-align: center; font-size: 16px; line-height: 1.5; color: #444; max-width: 320px; margin: 0 auto;">
+                        Despachamos tus lentes con envíos rápidos y seguros a tu región.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="white-page-content" id="questions">
+        <div class="container pt0 pb30">
+            <h3 class="left-title">Preguntas frecuentes</h3>
+            <hr>
+        </div>
+        <div class="container mb50">
+            <div class="row">
+                <div class="col-md-4 mb30">
+                    <h4>¿Hacen examen visual a domicilio?</h4>
+                    <p>
+                        Sí, realizamos exámenes visuales completos en la comodidad de tu hogar en la
+                        Región Metropolitana (Santiago) con un pequeño valor adicional por traslado.
+                        Llevamos equipamiento de alta tecnología a terreno.
+                    </p>
+                </div>
+                <div class="col-md-4 mb30">
+                    <h4>¿Qué necesito para comprar online de forma asistida?</h4>
+                    <p>
+                        Solo necesitas una receta óptica emitida por un oftalmólogo o tecnólogo médico
+                        con menos de un año de antigüedad. Nuestro equipo te asesorará digitalmente
+                        en la elección del marco y filtros ideales.
+                    </p>
+                </div>
+                <div class="col-md-4 mb30">
+                    <h4>¿Cuánto tarda la entrega de mis lentes?</h4>
+                    <p>
+                        El tiempo promedio de confección y despacho es de entre 3 y 5 días hábiles,
+                        dependiendo de la complejidad de la receta médica y los tratamientos adicionales
+                        elegidos (como filtro azul o fotocromático).
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- <div class="col-md-4 mb30">
+                    <h4>Lorem ipsum dolor?</h4>
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod.
+                    </p>
+                </div> 
+                <div class="col-md-4 mb30">
+                    <h4>Lorem ipsum dolor?</h4>
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod.
+                    </p>
+                </div>
+                <div class="col-md-4 mb30">
+                    <h4>Lorem ipsum dolor?</h4>
+                    <p>
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
+                        laborum eiusmod.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <div class="bg-faded pt90 pb90">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mr-auto ml-auto text-center">
+                        <h2 class="text-capitalize">¿Tienes preguntas?</h2>
+                        <p>
+                            No dudes en enviarnos tus inquietudes, trataremos de responderte a la brevedad.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-rounded btn-primary">Escríbenos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="row">
+            <div class=" col-md-12">
+                <h3 class="text-uppercase contact-title">Contáctanos</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container pb50">
+        <div class="row">
+            <div class="col-md-6 mb40">
+                <h2>Operativos para Empresas e Instituciones</h2>
+                <p>
+                    Solicita una jornada de atención visual y exámenes completos en terreno para tu empresa, comunidad o
+                    junta de vecinos. Nos adaptamos a tus necesidades.
+                </p>
+                <div class="smart-wrap">
+                    <div class="smart-forms smart-container">
+                        <form method="post" action="" id="smart-form">
+                            <div class="form-body">
+                                <div class="section">
+                                    <label class="field prepend-icon">
+                                        <span class="field-icon"><i class="fa fa-user"></i></span>
+                                        <input type="text" name="sendername" id="sendername" class="gui-input"
+                                            placeholder="Nombre completo">
+                                    </label>
+                                </div><!-- end section -->
+
+                                <div class="section">
+                                    <label class="field prepend-icon">
+                                        <span class="field-icon"><i class="fa fa-envelope"></i></span>
+                                        <input type="email" name="emailaddress" id="emailaddress" class="gui-input"
+                                            placeholder="Email">
+                                    </label>
+                                </div><!-- end section -->
+
+                                <!--  <div class="section">
+                                    <label class="field prepend-icon">
+                                        <span class="field-icon"><i class="fa fa-lightbulb-o"></i></span>
+                                        <input type="text" name="sendersubject" id="sendersubject" class="gui-input"
+                                            placeholder="Enter subjec">
+                                    </label>
+                                </div> --><!-- end section -->
+
+                                <div class="section">
+                                    <label class="field prepend-icon">
+                                        <span class="field-icon"><i class="fa fa-comments"></i></span>
+                                        <textarea class="gui-textarea" id="sendermessage" name="sendermessage"
+                                            placeholder="Mensaje"></textarea>
+                                        <span class="input-hint"> <strong>Pista:</strong> Escribe entre 80 y 300
+                                            caracteres.</span>
+                                    </label>
+                                </div><!-- end section -->
+                                <!--   <div class="section">
+                                    <div class="smart-widget sm-left sml-120">
+                                        <label class="field">
+                                            <input type="text" name="captcha" id="captcha" class="gui-input sfcode"
+                                                maxlength="6" placeholder="Enter CAPTCHA">
+                                        </label>
+                                        <label class="button captcode">
+                                            <img src="smart-form/contact/php/captcha/captcha.php?<?php echo time();?>"
+                                                id="captchax" alt="captcha">
+                                            <span class="refresh-captcha"><i class="fa fa-refresh"></i></span>
+                                        </label>
+                                    </div>
+                                </div> --><!-- end section -->
+
+                                <div class="result"></div><!-- end .result  section -->
+
+                            </div><!-- end .form-body section -->
+                            <div class="form-footer">
+                                <button type="submit" data-btntext-sending="Sending..." class="button btn btn-primary"
+                                    onclick="sendForm(event)">Enviar</button>
+                                <button type="reset" class="button">Reiniciar</button>
+                            </div><!-- end .form-footer section -->
+                        </form>
+                    </div><!-- end .smart-forms section -->
+                </div><!-- end .smart-wrap section -->
+            </div>
+            <div class="col-md-6 mb40">
+
+                <h4 class="text-uppercase">Dirección</h4>
+                <p>
+                    Calle falsa, <br> 123, Springfield
+                </p>
+                <br>
+                <h4 class="text-uppercase">Horarios de atención</h4>
+                <p>
+                    Lunes-Viernes: 8:00 am a 18:00 pm<br>
+                    Sábado: 10:00 am a 13:00 pm<br>
+                    Domingo: Cerrado</p>
+                <br>
+                <h4 class="text-uppercase">Correo electrónico</h4>
+                <p>
+                    <a href="#">opticajyc@gmail.com</a>
+                </p>
+                <br>
+                <h4 class="text-uppercase">Teléfono</h4>
+                <p>
+                    <a href="#">+56 9 2755 0322</a>
+                </p>
+                <br>
+                <h4 class="text-uppercase">Nuestras redes sociales</h4>
+                <div class="clearfix pt10">
+                    <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr#"
+                        class="social-icon si-border si-facebook">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/?lang=es" class="social-icon si-border si-twitter">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <!-- <a href="https://www.google.com/?zx=1783714592263" class="social-icon si-border si-g-plus">
+                        <i class="fa fa-google-plus"></i>
+                        <i class="fa fa-google-plus"></i>
+                    </a> -->
+                    <a href="https://www.instagram.com/optica_jyc/" class="social-icon si-border si-instagram">
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a href="https://cl.linkedin.com/" class="social-icon si-border si-linkedin">
+                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  <div class="clients container">
+        <div class="clients-inner">
+            <div class="owl-carousel owl-theme owl-clients">
+                <div class="item">
+                    <img src="images/cl-1.png" alt="" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="images/cl-2.png" alt="" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="images/cl-3.png" alt="" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="images/cl-4.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <footer class="footer footer-dark pt100 pb30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb40">
+                    <h3>Sobre nosotros</h3>
+                    <p>
+                        Más de 16 años brindando soluciones de salud visual integrales y personalizadas con la comodidad
+                        del servicio a domicilio.
+                    </p>
+                    <a href="#" class="btn btn-sm btn-white-outline">Leer más</a>
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <h3>Medios de pago</h3>
+                    <div class="list-unstyled footer-list-item">
+                        <div class="payment-method-container">
+                            <img class="payment-method webpay" src="images/logo-web-pay-plus.png" alt="">
+                            <img class="payment-method mercado-pago" src="images/mercadopago2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb40">
+                    <h3>Contacto</h3>
+                    <ul class="list-unstyled contact-list-item">
+                        <li>
+                            <i class="ti-home"></i>
+                            Calle falsa 123, Springfield
+                        </li>
+                        <li>
+                            <i class="ti-email"></i>
+                            opticajyc@gmail.com
+                        </li>
+                        <li>
+                            <i class="ti-mobile"></i>
+                            +56 9 2755 0322
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb40">
+                    <h3>Síguenos</h3>
+                    <div class="">
+                        <div class="clearfix">
+                            <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr#"
+                                class="social-icon-sm si-dark si-colored-facebook si-gray-round">
+                                <i class="fa fa-facebook"></i>
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com/?lang=es"
+                                class="social-icon-sm  si-dark si-colored-twitter si-gray-round">
+                                <i class="fa fa-twitter"></i>
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <!--   <a href="https://www.google.com/?zx=1783714592263"
+                                class="social-icon-sm si-dark si-colored-google-plus si-gray-round">
+                                <i class="fa fa-google-plus"></i>
+                                <i class="fa fa-google-plus"></i>
+                            </a> -->
+                            <a href="https://www.instagram.com/optica_jyc/"
+                                class="social-icon-sm si-dark si-colored-instagram si-gray-round">
+                                <i class="fa fa-instagram"></i>
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://cl.linkedin.com/"
+                                class="social-icon-sm si-dark si-colored-linkedin si-gray-round">
+                                <i class="fa fa-linkedin"></i>
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <span>&copy; 2026 Óptica JyC - Todos los derechos reservados.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!--/footer-->
+    <!--back to top-->
+    <a href="#" class="back-to-top hidden-xs-down" id="back-to-top"><i class="ti-angle-up"></i></a>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script type="text/javascript" src="js/plugins/plugins.js"></script>
+    <script type="text/javascript" src="js/assan.custom.js"></script>
+    <!-- load cubeportfolio -->
+    <script type="text/javascript" src="cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script>
+
+        /**FORM SCRIPT **/
+        function sendForm(event) {
+            event.preventDefault()
+        }
+
+        /**Hero  script**/
+        var tpj = jQuery;
+
+        var revapi1078;
+        tpj(document).ready(function () {
+            if (tpj("#rev_slider_1078_1").revolution == undefined) {
+                revslider_showDoubleJqueryError("#rev_slider_1078_1");
+            } else {
+                revapi1078 = tpj("#rev_slider_1078_1").show().revolution({
+                    sliderType: "standard",
+                    jsFileLocation: "revolution/js/",
+                    sliderLayout: "auto",
+                    dottedOverlay: "none",
+                    delay: 9000,
+                    navigation: {
+                        arrows: {
+                            enable: true,
+                            style: 'uranus',
+                            tmp: '',
+                            rtl: false,
+                            hide_onleave: false,
+                            hide_onmobile: true,
+                            hide_under: 600,
+                            hide_over: 9999,
+                            hide_delay: 200,
+                            hide_delay_mobile: 1200,
+                            left: {
+                                container: 'slider',
+                                h_align: 'left',
+                                v_align: 'center',
+                                h_offset: 0,
+                                v_offset: 0
+                            },
+                            right: {
+                                container: 'slider',
+                                h_align: 'right',
+                                v_align: 'center',
+                                h_offset: 0,
+                                v_offset: 0
+                            }
+                        }
+                    },
+                    viewPort: {
+                        enable: true,
+                        outof: "pause",
+                        visible_area: "80%",
+                        presize: false
+                    },
+                    responsiveLevels: [1240, 1024, 778, 480],
+                    visibilityLevels: [1240, 1024, 778, 480],
+                    gridwidth: [1140, 992, 700, 465],
+                    gridheight: [600, 530, 500, 480],
+                    lazyType: "none",
+                    parallax: {
+                        type: "mouse",
+                        origo: "slidercenter",
+                        speed: 2000,
+                        levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50, 46, 47, 48, 49, 50, 55]
+                    },
+                    shadow: 0,
+                    spinner: "off",
+                    stopLoop: "off",
+                    stopAfterLoops: -1,
+                    stopAtSlide: -1,
+                    shuffle: "off",
+                    autoHeight: "off",
+                    hideThumbsOnMobile: "off",
+                    hideSliderAtLimit: 0,
+                    hideCaptionAtLimit: 0,
+                    hideAllCaptionAtLilmit: 0,
+                    debugMode: false,
+                    fallbacks: {
+                        simplifyAll: "off",
+                        nextSlideOnWindowFocus: "off",
+                        disableFocusListener: false
+                    }
+                });
+            }
+        });	/*ready*/
+        //places masonry
+        (function ($, window, document, undefined) {
+            'use strict';
+
+            // init cubeportfolio
+            $('#js-grid-mosaic-flat').cubeportfolio({
+                filters: '#js-filters-mosaic-flat',
+                layoutMode: 'mosaic',
+                sortToPreventGaps: true,
+                mediaQueries: [{
+                    width: 1500,
+                    cols: 6
+                }, {
+                    width: 1100,
+                    cols: 4
+                }, {
+                    width: 800,
+                    cols: 3
+                }, {
+                    width: 480,
+                    cols: 2,
+                    options: {
+                        caption: '',
+                        gapHorizontal: 15,
+                        gapVertical: 15
+                    }
+                }],
+                defaultFilter: '*',
+                animationType: 'fadeOutTop',
+                gapHorizontal: 0,
+                gapVertical: 0,
+                gridAdjustment: 'responsive',
+                caption: 'fadeIn',
+                displayType: 'fadeIn',
+                displayTypeSpeed: 100,
+                // lightbox
+                lightboxDelegate: '.cbp-lightbox',
+                lightboxGallery: true,
+                lightboxTitleSrc: 'data-title',
+                lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+                plugins: {
+                    loadMore: {
+                        selector: '#js-loadMore-mosaic-flat',
+                        action: 'click',
+                        loadItems: 3
+                    }
+                }
+            });
+        })(jQuery, window, document);
+    </script>
+</body>
+
+</html>
